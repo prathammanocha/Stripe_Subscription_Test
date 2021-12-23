@@ -16,7 +16,7 @@ app = Flask(__name__,
             static_url_path='',
             static_folder='public')
 
-YOUR_DOMAIN = 'http://0.0.0.0:80'
+YOUR_DOMAIN = 'http://localhost:4242'
 
 @app.route('/', methods=['GET'])
 def get_index():
@@ -108,4 +108,4 @@ def webhook_received():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port=80)
+    app.run(port=4242)
